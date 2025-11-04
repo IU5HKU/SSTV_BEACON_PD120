@@ -1,6 +1,6 @@
 # 📡 ESP32-CAM SSTV PD120 Beacon (IU5HKU)
 
-This repository contains the source code for an **ESP32-CAM based Slow-Scan Television (SSTV) Beacon** designed to periodically capture an image, encode it using the **PD120 mode**, and transmit the resulting audio signal over a connected radio.
+This repository contains the source code for an **ESP32-CAM based Slow-Scan Television (SSTV) Beacon** designed to periodically capture an image, encode it using the **PD120 mode**, and transmit the resulting audio signal over a connected radio. The PD120 encoder is taken from a project of "tysonpower" that you can reach at this link https://github.com/Tysonpower/SSTV-and-Beyond
 
 The system utilizes the ESP32's **Deep Sleep** functionality to significantly reduce power consumption between transmissions, making it ideal for battery-powered or remote beacon applications.
 
@@ -75,3 +75,6 @@ Before uploading, review the main settings in `SSTV_BEACON_PD120.ino`:
 ---
 
 This project is licensed under the Free for all users license, as specified in the source code.
+
+The PD120 encoder is taken from a project of "tysonpower" that you can reach at this link:
+https://github.com/Tysonpower/SSTV-and-Beyond
