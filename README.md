@@ -48,7 +48,14 @@ Before uploading, review the main settings in `SSTV_BEACON_PD120.ino`:
 2.  **Overlay Text:** Customize your callsign and messages:
     ```c
     #define TEXT_TOP  "IU5HKU JN53HB" 
+    #define OVERLAY_COLOR_TOP RGB565_CONV(255, 0, 255) // MAGENTA
+    #define OUTLINE_TOP RGB565_CONV(0 ,0, 0)     // Text outline color (BLACK)
+    #define TEXT_TOP_X  5                        // X coordinate (Horizontal)
+    #define TEXT_TOP_Y  20                       // Y coordinate (Vertical)
+    #define TEXT_TOP_SIZE 1                      // Text scaling factor
+
     #define TEXT_BOTTOM "SSTV TEST"
+    ...the same for the bottom text
     ```
 3.  **Pinout:** Verify the GPIO pins match your specific ESP32-CAM module or wiring setup.
 
